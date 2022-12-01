@@ -35,8 +35,12 @@ function Signup() {
           city: Yup.string()
         })}
         //Butona tıklandığında yapılacaklar
-        onSubmit={(values) => {
+        onSubmit={(values,{resetForm, setSubmitting}) => {
           console.log(values);
+          setTimeout(()=>{
+            resetForm();
+            setSubmitting(false);
+          })
         }
         }
       >
