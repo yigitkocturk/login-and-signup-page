@@ -8,12 +8,7 @@ body {
     margin: auto;
     font-family: 'Comfortaa', cursive;
   }
-  .form span {
-    font-size: 40px;
-    color: #4b6cb7;
-    margin-bottom: 25px;
-    display: block;
-  }
+  
   .form {
     position: relative;
     z-index: 1;
@@ -38,20 +33,6 @@ body {
     font-family: 'Comfortaa', cursive;
   }
   
-  .form select {
-  
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    border-radius: 5px;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-family: 'Comfortaa', cursive;
-  
-  }
   .form input:focus {
     background: #dbdbdb;
   }
@@ -76,12 +57,18 @@ body {
     background: #395591;
   }
   
+  .form span {
+    font-size: 40px;
+    color: #4b6cb7;
+    margin-bottom: 25px;
+    display: block;
+  }
   
-  .form-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .form p.error {
+    margin: 0 0 10px 10px;
+    text-align: left;
+    font-size: 10px;
+    color: red;
+  }
 
-    font-size: 20px;
-}
-
+  
